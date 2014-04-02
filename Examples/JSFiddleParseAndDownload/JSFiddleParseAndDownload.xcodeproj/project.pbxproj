@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F2E3CE517ECECED00C1A330 /* HTMLDownloaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */; };
+		5F2E3CE617ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */; };
+		5F362D6317AC19FE00E7262F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6217AC19FE00E7262F /* UIKit.framework */; };
+		5F362D6517AC19FE00E7262F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6417AC19FE00E7262F /* Foundation.framework */; };
+		5F362D6717AC19FE00E7262F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6617AC19FE00E7262F /* CoreGraphics.framework */; };
+		5F362D6D17AC19FE00E7262F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D6B17AC19FE00E7262F /* InfoPlist.strings */; };
+		5F362D6F17AC19FE00E7262F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362D6E17AC19FE00E7262F /* main.m */; };
+		5F362D7317AC19FE00E7262F /* JSFiddleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362D7217AC19FE00E7262F /* JSFiddleAppDelegate.m */; };
+		5F362D7517AC19FE00E7262F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D7417AC19FE00E7262F /* Default.png */; };
+		5F362D7717AC19FE00E7262F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D7617AC19FE00E7262F /* Default@2x.png */; };
+		5F362D7917AC19FE00E7262F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D7817AC19FE00E7262F /* Default-568h@2x.png */; };
+		5F362D7C17AC19FE00E7262F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D7A17AC19FE00E7262F /* MainStoryboard_iPhone.storyboard */; };
+		5F362D7F17AC19FE00E7262F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D7D17AC19FE00E7262F /* MainStoryboard_iPad.storyboard */; };
+		5F362D8217AC19FE00E7262F /* JSFiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362D8117AC19FE00E7262F /* JSFiddleViewController.m */; };
+		5F362D8A17AC19FE00E7262F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D8917AC19FE00E7262F /* SenTestingKit.framework */; };
+		5F362D8B17AC19FE00E7262F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6217AC19FE00E7262F /* UIKit.framework */; };
+		5F362D8C17AC19FE00E7262F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6417AC19FE00E7262F /* Foundation.framework */; };
+		5F362D9417AC19FE00E7262F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F362D9217AC19FE00E7262F /* InfoPlist.strings */; };
+		5F362D9717AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362D9617AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m */; };
+		5F362DA117AC41E000E7262F /* libPods-DTFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */; };
+		5F362DA817AC476200E7262F /* BBUHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362DA717AC476200E7262F /* BBUHTMLParser.m */; };
+		A0035A9F17F8CB23000C257E /* HTMLDownloader.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */; };
+		A0035AA117F8CB30000C257E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A0035AA017F8CB30000C257E /* Podfile */; };
+		A054D93917B9726800EB8A3C /* libPods-GDataXML-HTML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */; };
+		A054D93B17B972DF00EB8A3C /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A054D93A17B972DF00EB8A3C /* libxml2.2.dylib */; };
+		A0A82EB517F758150040F3A8 /* HCDownload.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0A82EB417F758150040F3A8 /* HCDownload.podspec */; };
+		A0B58BC017B81BA400A585DD /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A0B58BBF17B81BA400A585DD /* test.html */; };
+		E9BDC0D98DE442E1A5E2D238 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821E05F0339F42BAAB3C521D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F362D8D17AC19FE00E7262F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F362D5717AC19FE00E7262F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F362D5E17AC19FE00E7262F;
+			remoteInfo = JSFiddleParseAndDownload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F2E3CE117ECECED00C1A330 /* HTMLDownloaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLDownloaderViewController.h; path = HTMLDownloader/HTMLDownloaderViewController.h; sourceTree = "<group>"; };
+		5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLDownloaderViewController.m; path = HTMLDownloader/HTMLDownloaderViewController.m; sourceTree = "<group>"; };
+		5F2E3CE317ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GDataXMLNode+HTMLSerialization.h"; path = "HTMLDownloader/GDataXMLNode+HTMLSerialization.h"; sourceTree = "<group>"; };
+		5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLNode+HTMLSerialization.m"; path = "HTMLDownloader/GDataXMLNode+HTMLSerialization.m"; sourceTree = "<group>"; };
+		5F362D5F17AC19FE00E7262F /* JSFiddleParseAndDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSFiddleParseAndDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F362D6217AC19FE00E7262F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F362D6417AC19FE00E7262F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F362D6617AC19FE00E7262F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F362D6A17AC19FE00E7262F /* JSFiddleParseAndDownload-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSFiddleParseAndDownload-Info.plist"; sourceTree = "<group>"; };
+		5F362D6C17AC19FE00E7262F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F362D6E17AC19FE00E7262F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F362D7017AC19FE00E7262F /* JSFiddleParseAndDownload-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSFiddleParseAndDownload-Prefix.pch"; sourceTree = "<group>"; };
+		5F362D7117AC19FE00E7262F /* JSFiddleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFiddleAppDelegate.h; sourceTree = "<group>"; };
+		5F362D7217AC19FE00E7262F /* JSFiddleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFiddleAppDelegate.m; sourceTree = "<group>"; };
+		5F362D7417AC19FE00E7262F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5F362D7617AC19FE00E7262F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5F362D7817AC19FE00E7262F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F362D7B17AC19FE00E7262F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5F362D7E17AC19FE00E7262F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5F362D8017AC19FE00E7262F /* JSFiddleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFiddleViewController.h; sourceTree = "<group>"; };
+		5F362D8117AC19FE00E7262F /* JSFiddleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFiddleViewController.m; sourceTree = "<group>"; };
+		5F362D8817AC19FE00E7262F /* JSFiddleParseAndDownloadTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSFiddleParseAndDownloadTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F362D8917AC19FE00E7262F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F362D9117AC19FE00E7262F /* JSFiddleParseAndDownloadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSFiddleParseAndDownloadTests-Info.plist"; sourceTree = "<group>"; };
+		5F362D9317AC19FE00E7262F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F362D9517AC19FE00E7262F /* JSFiddleParseAndDownloadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFiddleParseAndDownloadTests.h; sourceTree = "<group>"; };
+		5F362D9617AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFiddleParseAndDownloadTests.m; sourceTree = "<group>"; };
+		5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DTFoundation.a"; path = "../../../../../../../../Users/softphone/WORKSPACES/APPLE/build/Release-iphoneos/libPods-DTFoundation.a"; sourceTree = "<group>"; };
+		5F362DA617AC476200E7262F /* BBUHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBUHTMLParser.h; path = JSFiddleParseAndDownload/BBUHTMLParser.h; sourceTree = "<group>"; };
+		5F362DA717AC476200E7262F /* BBUHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBUHTMLParser.m; path = JSFiddleParseAndDownload/BBUHTMLParser.m; sourceTree = "<group>"; };
+		821E05F0339F42BAAB3C521D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HTMLDownloader.podspec; sourceTree = "<group>"; };
+		A0035AA017F8CB30000C257E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-GDataXML-HTML.a"; path = "../../APPLE/build/Release-iphoneos/libPods-GDataXML-HTML.a"; sourceTree = "<group>"; };
+		A054D93A17B972DF00EB8A3C /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		A0A82EB417F758150040F3A8 /* HCDownload.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HCDownload.podspec; sourceTree = "<group>"; };
+		A0B58BBF17B81BA400A585DD /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = SOURCE_ROOT; };
+		AB7E1784626749A290A73084 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F362D5C17AC19FE00E7262F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F362D6317AC19FE00E7262F /* UIKit.framework in Frameworks */,
+				5F362D6517AC19FE00E7262F /* Foundation.framework in Frameworks */,
+				5F362D6717AC19FE00E7262F /* CoreGraphics.framework in Frameworks */,
+				E9BDC0D98DE442E1A5E2D238 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F362D8417AC19FE00E7262F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A054D93B17B972DF00EB8A3C /* libxml2.2.dylib in Frameworks */,
+				A054D93917B9726800EB8A3C /* libPods-GDataXML-HTML.a in Frameworks */,
+				5F362DA117AC41E000E7262F /* libPods-DTFoundation.a in Frameworks */,
+				5F362D8A17AC19FE00E7262F /* SenTestingKit.framework in Frameworks */,
+				5F362D8B17AC19FE00E7262F /* UIKit.framework in Frameworks */,
+				5F362D8C17AC19FE00E7262F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F2E3CE017ECECD000C1A330 /* HTMLDowloader */ = {
+			isa = PBXGroup;
+			children = (
+				5F2E3CE117ECECED00C1A330 /* HTMLDownloaderViewController.h */,
+				5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */,
+				5F2E3CE317ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.h */,
+				5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */,
+			);
+			name = HTMLDowloader;
+			sourceTree = "<group>";
+		};
+		5F362D5617AC19FE00E7262F = {
+			isa = PBXGroup;
+			children = (
+				A0035AA017F8CB30000C257E /* Podfile */,
+				A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */,
+				A0A82EB417F758150040F3A8 /* HCDownload.podspec */,
+				5F2E3CE017ECECD000C1A330 /* HTMLDowloader */,
+				A054D93A17B972DF00EB8A3C /* libxml2.2.dylib */,
+				A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */,
+				5F362DA217AC46AE00E7262F /* BBUHTMLParser */,
+				5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */,
+				5F362D6817AC19FE00E7262F /* JSFiddleParseAndDownload */,
+				5F362D8F17AC19FE00E7262F /* JSFiddleParseAndDownloadTests */,
+				5F362D6117AC19FE00E7262F /* Frameworks */,
+				5F362D6017AC19FE00E7262F /* Products */,
+				AB7E1784626749A290A73084 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5F362D6017AC19FE00E7262F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F362D5F17AC19FE00E7262F /* JSFiddleParseAndDownload.app */,
+				5F362D8817AC19FE00E7262F /* JSFiddleParseAndDownloadTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F362D6117AC19FE00E7262F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F362D6217AC19FE00E7262F /* UIKit.framework */,
+				5F362D6417AC19FE00E7262F /* Foundation.framework */,
+				5F362D6617AC19FE00E7262F /* CoreGraphics.framework */,
+				5F362D8917AC19FE00E7262F /* SenTestingKit.framework */,
+				821E05F0339F42BAAB3C521D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F362D6817AC19FE00E7262F /* JSFiddleParseAndDownload */ = {
+			isa = PBXGroup;
+			children = (
+				5F362D7117AC19FE00E7262F /* JSFiddleAppDelegate.h */,
+				5F362D7217AC19FE00E7262F /* JSFiddleAppDelegate.m */,
+				5F362D7A17AC19FE00E7262F /* MainStoryboard_iPhone.storyboard */,
+				5F362D7D17AC19FE00E7262F /* MainStoryboard_iPad.storyboard */,
+				5F362D8017AC19FE00E7262F /* JSFiddleViewController.h */,
+				5F362D8117AC19FE00E7262F /* JSFiddleViewController.m */,
+				5F362D6917AC19FE00E7262F /* Supporting Files */,
+			);
+			path = JSFiddleParseAndDownload;
+			sourceTree = "<group>";
+		};
+		5F362D6917AC19FE00E7262F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F362D6A17AC19FE00E7262F /* JSFiddleParseAndDownload-Info.plist */,
+				5F362D6B17AC19FE00E7262F /* InfoPlist.strings */,
+				5F362D6E17AC19FE00E7262F /* main.m */,
+				5F362D7017AC19FE00E7262F /* JSFiddleParseAndDownload-Prefix.pch */,
+				5F362D7417AC19FE00E7262F /* Default.png */,
+				5F362D7617AC19FE00E7262F /* Default@2x.png */,
+				5F362D7817AC19FE00E7262F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F362D8F17AC19FE00E7262F /* JSFiddleParseAndDownloadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B58BBF17B81BA400A585DD /* test.html */,
+				5F362D9517AC19FE00E7262F /* JSFiddleParseAndDownloadTests.h */,
+				5F362D9617AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m */,
+				5F362D9017AC19FE00E7262F /* Supporting Files */,
+			);
+			path = JSFiddleParseAndDownloadTests;
+			sourceTree = "<group>";
+		};
+		5F362D9017AC19FE00E7262F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F362D9117AC19FE00E7262F /* JSFiddleParseAndDownloadTests-Info.plist */,
+				5F362D9217AC19FE00E7262F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F362DA217AC46AE00E7262F /* BBUHTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				5F362DA617AC476200E7262F /* BBUHTMLParser.h */,
+				5F362DA717AC476200E7262F /* BBUHTMLParser.m */,
+			);
+			name = BBUHTMLParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F362D5E17AC19FE00E7262F /* JSFiddleParseAndDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F362D9A17AC19FE00E7262F /* Build configuration list for PBXNativeTarget "JSFiddleParseAndDownload" */;
+			buildPhases = (
+				1727C291053548F0BA521EED /* Check Pods Manifest.lock */,
+				5F362D5B17AC19FE00E7262F /* Sources */,
+				5F362D5C17AC19FE00E7262F /* Frameworks */,
+				5F362D5D17AC19FE00E7262F /* Resources */,
+				7AFF9E8BD3B64378B1CC047A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSFiddleParseAndDownload;
+			productName = JSFiddleParseAndDownload;
+			productReference = 5F362D5F17AC19FE00E7262F /* JSFiddleParseAndDownload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F362D8717AC19FE00E7262F /* JSFiddleParseAndDownloadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F362D9D17AC19FE00E7262F /* Build configuration list for PBXNativeTarget "JSFiddleParseAndDownloadTests" */;
+			buildPhases = (
+				5F362D8317AC19FE00E7262F /* Sources */,
+				5F362D8417AC19FE00E7262F /* Frameworks */,
+				5F362D8517AC19FE00E7262F /* Resources */,
+				5F362D8617AC19FE00E7262F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F362D8E17AC19FE00E7262F /* PBXTargetDependency */,
+			);
+			name = JSFiddleParseAndDownloadTests;
+			productName = JSFiddleParseAndDownloadTests;
+			productReference = 5F362D8817AC19FE00E7262F /* JSFiddleParseAndDownloadTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F362D5717AC19FE00E7262F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JSFiddle;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = softphone;
+			};
+			buildConfigurationList = 5F362D5A17AC19FE00E7262F /* Build configuration list for PBXProject "JSFiddleParseAndDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F362D5617AC19FE00E7262F;
+			productRefGroup = 5F362D6017AC19FE00E7262F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F362D5E17AC19FE00E7262F /* JSFiddleParseAndDownload */,
+				5F362D8717AC19FE00E7262F /* JSFiddleParseAndDownloadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F362D5D17AC19FE00E7262F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A82EB517F758150040F3A8 /* HCDownload.podspec in Resources */,
+				5F362D6D17AC19FE00E7262F /* InfoPlist.strings in Resources */,
+				5F362D7517AC19FE00E7262F /* Default.png in Resources */,
+				5F362D7717AC19FE00E7262F /* Default@2x.png in Resources */,
+				5F362D7917AC19FE00E7262F /* Default-568h@2x.png in Resources */,
+				5F362D7C17AC19FE00E7262F /* MainStoryboard_iPhone.storyboard in Resources */,
+				A0035AA117F8CB30000C257E /* Podfile in Resources */,
+				A0035A9F17F8CB23000C257E /* HTMLDownloader.podspec in Resources */,
+				5F362D7F17AC19FE00E7262F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F362D8517AC19FE00E7262F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F362D9417AC19FE00E7262F /* InfoPlist.strings in Resources */,
+				A0B58BC017B81BA400A585DD /* test.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1727C291053548F0BA521EED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F362D8617AC19FE00E7262F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		7AFF9E8BD3B64378B1CC047A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F362D5B17AC19FE00E7262F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F362D6F17AC19FE00E7262F /* main.m in Sources */,
+				5F362D7317AC19FE00E7262F /* JSFiddleAppDelegate.m in Sources */,
+				5F362D8217AC19FE00E7262F /* JSFiddleViewController.m in Sources */,
+				5F362DA817AC476200E7262F /* BBUHTMLParser.m in Sources */,
+				5F2E3CE517ECECED00C1A330 /* HTMLDownloaderViewController.m in Sources */,
+				5F2E3CE617ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F362D8317AC19FE00E7262F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F362D9717AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F362D8E17AC19FE00E7262F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F362D5E17AC19FE00E7262F /* JSFiddleParseAndDownload */;
+			targetProxy = 5F362D8D17AC19FE00E7262F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F362D6B17AC19FE00E7262F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F362D6C17AC19FE00E7262F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F362D7A17AC19FE00E7262F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F362D7B17AC19FE00E7262F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5F362D7D17AC19FE00E7262F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F362D7E17AC19FE00E7262F /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5F362D9217AC19FE00E7262F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F362D9317AC19FE00E7262F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F362D9817AC19FE00E7262F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F362D9917AC19FE00E7262F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F362D9B17AC19FE00E7262F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7E1784626749A290A73084 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Prefix.pch";
+				INFOPLIST_FILE = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F362D9C17AC19FE00E7262F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7E1784626749A290A73084 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Prefix.pch";
+				INFOPLIST_FILE = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F362D9E17AC19FE00E7262F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JSFiddleParseAndDownload.app/JSFiddleParseAndDownload";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/DTFoundation\"",
+					"\"${PODS_ROOT}/Headers/GDataXML-HTML\"",
+					"\"${LIBXM2_HEADERS}",
+				);
+				INFOPLIST_FILE = "JSFiddleParseAndDownloadTests/JSFiddleParseAndDownloadTests-Info.plist";
+				LIBXM2_HEADERS = "$(SDKROOT)/usr/include/libxml2";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F362D9F17AC19FE00E7262F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JSFiddleParseAndDownload.app/JSFiddleParseAndDownload";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSFiddleParseAndDownload/JSFiddleParseAndDownload-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/DTFoundation\"",
+					"\"${PODS_ROOT}/Headers/GDataXML-HTML\"",
+					"\"${LIBXM2_HEADERS}",
+				);
+				INFOPLIST_FILE = "JSFiddleParseAndDownloadTests/JSFiddleParseAndDownloadTests-Info.plist";
+				LIBXM2_HEADERS = "$(SDKROOT)/usr/include/libxml2";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F362D5A17AC19FE00E7262F /* Build configuration list for PBXProject "JSFiddleParseAndDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F362D9817AC19FE00E7262F /* Debug */,
+				5F362D9917AC19FE00E7262F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F362D9A17AC19FE00E7262F /* Build configuration list for PBXNativeTarget "JSFiddleParseAndDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F362D9B17AC19FE00E7262F /* Debug */,
+				5F362D9C17AC19FE00E7262F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F362D9D17AC19FE00E7262F /* Build configuration list for PBXNativeTarget "JSFiddleParseAndDownloadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F362D9E17AC19FE00E7262F /* Debug */,
+				5F362D9F17AC19FE00E7262F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F362D5717AC19FE00E7262F /* Project object */;
+}

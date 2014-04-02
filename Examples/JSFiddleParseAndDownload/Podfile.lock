@@ -1,0 +1,28 @@
+PODS:
+  - AFNetworking (1.3.1)
+  - DTFoundation/Core (1.5.0)
+  - DTFoundation/DTHTMLParser (1.5.0):
+    - DTFoundation/Core
+  - ErrorKit/Core (0.0.5)
+  - GDataXML-HTML (1.1.0)
+  - HCDownload (1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.1)
+  - DTFoundation/DTHTMLParser (~> 1.5.0)
+  - ErrorKit/Core (~> 0.0.5)
+  - GDataXML-HTML (~> 1.1.0)
+  - HCDownload (from `./HCDownload.podspec`)
+
+EXTERNAL SOURCES:
+  HCDownload:
+    :podspec: ./HCDownload.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  DTFoundation: b0e278b134929e3ab7fd1c5d6d252e1c06d03c55
+  ErrorKit: a1db9d267e4cba010b2ba47719ff33a1ad98ae27
+  GDataXML-HTML: 281ea772a286241f860fa152cff5c7a7cd817336
+  HCDownload: 4c8a2c711170c051bf426af6838ba81c01926b8d
+
+COCOAPODS: 0.23.0

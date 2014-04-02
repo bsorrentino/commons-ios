@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6958A68D-E090-4857-B309-769EA2B8E2A4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JSFiddleParseAndDownload</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AB6B958E-6E5D-43B5-9097-F339CC42836B</key>
+		<string>file://localhost/Volumes/BSC/WORKSPACES/JSFiddleParseAndDownload.git/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JSFiddleParseAndDownload.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AB6B958E-6E5D-43B5-9097-F339CC42836B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file://localhost/Volumes/BSC/WORKSPACES/JSFiddleParseAndDownload.git/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AB6B958E-6E5D-43B5-9097-F339CC42836B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AB6B958E-6E5D-43B5-9097-F339CC42836B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JSFiddleParseAndDownload</string>
+		</dict>
+	</array>
+</dict>
+</plist>

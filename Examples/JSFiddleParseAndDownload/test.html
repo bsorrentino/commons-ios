@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <title>fullCalendar  - jsFiddle demo by bsorrentino</title>
+            
+            <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.js'></script>
+                <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+                
+                
+                <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+                
+                
+                
+                <script type='text/javascript' src="http://www.kula.org.uk/publicscripts/fullcalendar/fullcalendar.min.js"></script>
+                
+                
+                
+                <link rel="stylesheet" type="text/css" href="http://www.kula.org.uk/publicscripts/fullcalendar/fullcalendar.css">
+                
+                
+                
+                <style type='text/css'>
+                
+                </style>
+                
+                
+                
+                <script type='text/javascript'>//<![CDATA[
+                $(window).load(function(){
+                $('#mycalendar').fullCalendar(
+                {
+                header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+                },
+                eventRender: function(event, element, view)
+                {
+                element.bind('click', function()
+                {
+                var day = ($.fullCalendar.formatDate( event.start, 'dd' ));
+                var month = ($.fullCalendar.formatDate( event.start, 'MM' ));
+                var year = ($.fullCalendar.formatDate( event.start, 'yyyy' ));
+                alert(year+'-'+month+'-'+day);
+                });
+                },
+                editable: true,
+                events: [
+                {
+                title  : 'event1',
+                start  : '2011-05-07'
+                },
+                {
+                title  : 'event2',
+                start  : '2011-05-10',
+                end    : '2011-05-15'
+                },
+                {
+                title  : 'event3',
+                start  : '2011-05-07 12:30:00',
+                allDay : false // will make the time show
+                }
+                ]
+                
+                });
+                });//]]>
+                
+                </script>
+                
+                
+                </head>
+                <body>
+                <div id="mycalendar"> Calendar </div>
+                
+                </body>
+                
+                
+                </html>
+                
