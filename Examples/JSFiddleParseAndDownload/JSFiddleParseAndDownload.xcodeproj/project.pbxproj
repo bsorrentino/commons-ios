@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F2E3CE517ECECED00C1A330 /* HTMLDownloaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */; };
-		5F2E3CE617ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */; };
 		5F362D6317AC19FE00E7262F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6217AC19FE00E7262F /* UIKit.framework */; };
 		5F362D6517AC19FE00E7262F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6417AC19FE00E7262F /* Foundation.framework */; };
 		5F362D6717AC19FE00E7262F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362D6617AC19FE00E7262F /* CoreGraphics.framework */; };
@@ -50,10 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F2E3CE117ECECED00C1A330 /* HTMLDownloaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLDownloaderViewController.h; path = HTMLDownloader/HTMLDownloaderViewController.h; sourceTree = "<group>"; };
-		5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLDownloaderViewController.m; path = HTMLDownloader/HTMLDownloaderViewController.m; sourceTree = "<group>"; };
-		5F2E3CE317ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GDataXMLNode+HTMLSerialization.h"; path = "HTMLDownloader/GDataXMLNode+HTMLSerialization.h"; sourceTree = "<group>"; };
-		5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLNode+HTMLSerialization.m"; path = "HTMLDownloader/GDataXMLNode+HTMLSerialization.m"; sourceTree = "<group>"; };
 		5F362D5F17AC19FE00E7262F /* JSFiddleParseAndDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSFiddleParseAndDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F362D6217AC19FE00E7262F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F362D6417AC19FE00E7262F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,10 +123,6 @@
 				5F6FE23218ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m */,
 				5F6FE23318ECB3970006D076 /* HTMLDownloaderViewController.h */,
 				5F6FE23418ECB3970006D076 /* HTMLDownloaderViewController.m */,
-				5F2E3CE117ECECED00C1A330 /* HTMLDownloaderViewController.h */,
-				5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */,
-				5F2E3CE317ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.h */,
-				5F2E3CE417ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m */,
 			);
 			name = HTMLDowloader;
 			sourceTree = "<group>";
@@ -144,15 +134,15 @@
 				A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */,
 				A0A82EB417F758150040F3A8 /* HCDownload.podspec */,
 				5F2E3CE017ECECD000C1A330 /* HTMLDowloader */,
-				A054D93A17B972DF00EB8A3C /* libxml2.2.dylib */,
-				A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */,
 				5F362DA217AC46AE00E7262F /* BBUHTMLParser */,
-				5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */,
 				5F362D6817AC19FE00E7262F /* JSFiddleParseAndDownload */,
 				5F362D8F17AC19FE00E7262F /* JSFiddleParseAndDownloadTests */,
 				5F362D6117AC19FE00E7262F /* Frameworks */,
 				5F362D6017AC19FE00E7262F /* Products */,
 				AB7E1784626749A290A73084 /* Pods.xcconfig */,
+				A054D93A17B972DF00EB8A3C /* libxml2.2.dylib */,
+				A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */,
+				5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -387,8 +377,6 @@
 				5F362D8217AC19FE00E7262F /* JSFiddleViewController.m in Sources */,
 				5F362DA817AC476200E7262F /* BBUHTMLParser.m in Sources */,
 				5F6FE23618ECB3970006D076 /* HTMLDownloaderViewController.m in Sources */,
-				5F2E3CE517ECECED00C1A330 /* HTMLDownloaderViewController.m in Sources */,
-				5F2E3CE617ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m in Sources */,
 				5F6FE23518ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
