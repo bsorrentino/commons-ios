@@ -28,6 +28,8 @@
 		5F362D9717AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362D9617AC19FE00E7262F /* JSFiddleParseAndDownloadTests.m */; };
 		5F362DA117AC41E000E7262F /* libPods-DTFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */; };
 		5F362DA817AC476200E7262F /* BBUHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F362DA717AC476200E7262F /* BBUHTMLParser.m */; };
+		5F6FE23518ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FE23218ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m */; };
+		5F6FE23618ECB3970006D076 /* HTMLDownloaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FE23418ECB3970006D076 /* HTMLDownloaderViewController.m */; };
 		A0035A9F17F8CB23000C257E /* HTMLDownloader.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */; };
 		A0035AA117F8CB30000C257E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A0035AA017F8CB30000C257E /* Podfile */; };
 		A054D93917B9726800EB8A3C /* libPods-GDataXML-HTML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A054D93817B9726800EB8A3C /* libPods-GDataXML-HTML.a */; };
@@ -78,6 +80,10 @@
 		5F362DA017AC41E000E7262F /* libPods-DTFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DTFoundation.a"; path = "../../../../../../../../Users/softphone/WORKSPACES/APPLE/build/Release-iphoneos/libPods-DTFoundation.a"; sourceTree = "<group>"; };
 		5F362DA617AC476200E7262F /* BBUHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBUHTMLParser.h; path = JSFiddleParseAndDownload/BBUHTMLParser.h; sourceTree = "<group>"; };
 		5F362DA717AC476200E7262F /* BBUHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBUHTMLParser.m; path = JSFiddleParseAndDownload/BBUHTMLParser.m; sourceTree = "<group>"; };
+		5F6FE23118ECB3970006D076 /* GDataXMLNode+HTMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GDataXMLNode+HTMLSerialization.h"; path = "../../HTMLDownloader/GDataXMLNode+HTMLSerialization.h"; sourceTree = "<group>"; };
+		5F6FE23218ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLNode+HTMLSerialization.m"; path = "../../HTMLDownloader/GDataXMLNode+HTMLSerialization.m"; sourceTree = "<group>"; };
+		5F6FE23318ECB3970006D076 /* HTMLDownloaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLDownloaderViewController.h; path = ../../HTMLDownloader/HTMLDownloaderViewController.h; sourceTree = "<group>"; };
+		5F6FE23418ECB3970006D076 /* HTMLDownloaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLDownloaderViewController.m; path = ../../HTMLDownloader/HTMLDownloaderViewController.m; sourceTree = "<group>"; };
 		821E05F0339F42BAAB3C521D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0035A9E17F8CB23000C257E /* HTMLDownloader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HTMLDownloader.podspec; sourceTree = "<group>"; };
 		A0035AA017F8CB30000C257E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -119,6 +125,10 @@
 		5F2E3CE017ECECD000C1A330 /* HTMLDowloader */ = {
 			isa = PBXGroup;
 			children = (
+				5F6FE23118ECB3970006D076 /* GDataXMLNode+HTMLSerialization.h */,
+				5F6FE23218ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m */,
+				5F6FE23318ECB3970006D076 /* HTMLDownloaderViewController.h */,
+				5F6FE23418ECB3970006D076 /* HTMLDownloaderViewController.m */,
 				5F2E3CE117ECECED00C1A330 /* HTMLDownloaderViewController.h */,
 				5F2E3CE217ECECED00C1A330 /* HTMLDownloaderViewController.m */,
 				5F2E3CE317ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.h */,
@@ -376,8 +386,10 @@
 				5F362D7317AC19FE00E7262F /* JSFiddleAppDelegate.m in Sources */,
 				5F362D8217AC19FE00E7262F /* JSFiddleViewController.m in Sources */,
 				5F362DA817AC476200E7262F /* BBUHTMLParser.m in Sources */,
+				5F6FE23618ECB3970006D076 /* HTMLDownloaderViewController.m in Sources */,
 				5F2E3CE517ECECED00C1A330 /* HTMLDownloaderViewController.m in Sources */,
 				5F2E3CE617ECECED00C1A330 /* GDataXMLNode+HTMLSerialization.m in Sources */,
+				5F6FE23518ECB3970006D076 /* GDataXMLNode+HTMLSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
