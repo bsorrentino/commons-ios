@@ -120,7 +120,7 @@ class ViewController: UIViewController {
             return focusedView
         }
         
-        return self.preferredFocusedView
+        return super.preferredFocusedView
     }
     
     override func viewDidLoad() {
